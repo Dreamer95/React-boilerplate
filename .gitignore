@@ -1,0 +1,9 @@
+#folder
+build
+node_modules
+.idea/*
+
+# file
+.env
+package-lock.json
+yarn.lock
