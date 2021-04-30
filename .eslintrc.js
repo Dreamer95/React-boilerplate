@@ -49,6 +49,8 @@ module.exports = {
         ],
         'import/no-extraneous-dependencies': 'off',
         'import/no-unresolved': 0,
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error'],
         'import/extensions': [
             'error',
             'ignorePackages',

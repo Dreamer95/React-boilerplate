@@ -14,6 +14,7 @@ module.exports = {
             Modules: `${paths.appSrc}/modules/`,
             Services: `${paths.appSrc}/services/`,
             Locale: `${paths.appSrc}/locale/`,
+            'react/jsx-runtime': require.resolve('react/jsx-runtime'),
             react: require.resolve('react'),
         },
     },
