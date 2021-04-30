@@ -1,10 +1,21 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const paths = require('./paths')
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.js', '.json', '.jsx', '.ts', '.tsx'],
+    alias: {
+      Src: paths.appSrc,
+      Assets: `${paths.appSrc}/assets/`,
+      Components: `${paths.appSrc}/components/`,
+      Hooks: `${paths.appSrc}/hooks/`,
+      Modules: `${paths.appSrc}/modules/`,
+      Services: `${paths.appSrc}/services/`,
+      Locale: `${paths.appSrc}/locale/`,
+      react: require.resolve('react'),
+    },
   },
   module: {
     rules: [
